@@ -27,6 +27,6 @@ jobs:
       
       - name: Build and push Docker image
         run: |
-          docker build . --file Dockerfile
+          docker build . --file Dockerfile --tag myns75/tp_cd:$TAG
           docker push myns75/tp_cd
 
