@@ -28,5 +28,5 @@ jobs:
       - name: Build and push Docker image
         run: |
           docker build . --file Dockerfile
-          docker push myns75/tp_cd:tagname
+          docker push myns75/tp_cd
 
