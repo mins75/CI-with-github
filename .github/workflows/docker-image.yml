@@ -27,7 +27,5 @@ jobs:
       
       - name: Build and push Docker image
         run: |
-          TAG=$(date +%s)
-          docker build . --file Dockerfile --tag my-docker-hub-namespace/my-docker-hub-repository:$TAG
-          docker push my-docker-hub-namespace/my-docker-hub-repository:$TAG
+          docker push myns75/tp_cd:tagname
 
