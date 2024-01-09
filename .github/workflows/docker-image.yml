@@ -27,6 +27,6 @@ jobs:
       
       - name: Build and push Docker image
         run: |
-          docker build . --file Dockerfile --tag my-docker-hub-namespace/my-docker-hub-repository
+          docker build . --file Dockerfile
           docker push my-docker-hub-namespace/my-docker-hub-repository
 
